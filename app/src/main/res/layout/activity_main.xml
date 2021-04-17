@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/fondo4"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/fotoTurismoMain"
+        android:layout_width="226dp"
+        android:layout_height="217dp"
+        android:layout_marginStart="4dp"
+        android:alpha="1"
+        android:padding="5dp"
+        android:src="@drawable/senderismo1"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nombreActividadMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="Actividad Senderismo"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/fotoTurismoMain"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rangodeEdadMain"
+        android:layout_width="138dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="Edad= 12-70 Años"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@id/fotoTurismoMain"
+        app:layout_constraintTop_toBottomOf="@id/nombreActividadMain" />
+
+
+    <TextView
+        android:id="@+id/horarioActividadMain"
+        android:layout_width="145dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="Horario:8 am-3 pm"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/fotoTurismoMain"
+        app:layout_constraintTop_toBottomOf="@id/rangodeEdadMain" />
+
+
+    <TextView
+        android:id="@+id/descripcionActividadMain"
+        android:layout_width="357dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/descripcion1"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horarioActividadMain" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descripcionActividadMain" />
+
+    <EditText
+        android:id="@+id/paqueteMain"
+        android:layout_width="136dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/paqueteTuristico"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/fotoTurismoMain"
+        app:layout_constraintTop_toBottomOf="@id/resultado" />
+
+    <Button
+        android:id="@+id/botonCalcular"
+        android:layout_width="128dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/gray"
+        android:hint="@string/calcular"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/paqueteMain" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

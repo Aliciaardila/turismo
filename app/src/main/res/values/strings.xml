@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Turismo</string>
+    <string name="paqueteTuristico">Numero de personas</string>
+    <string name="calcular">Calcular paquete</string>
+    <string name="descripcion1"> Senderismo: Un viaje a pie para armonizarnos con la tierra a través de exuberantes paisajes naturales ricos en biodiversidad, con hermosas panorámicas, arroyos cristalinos y la propia exigencia física de un espíritu aventurero.</string>
+    <string name="descripcion2">Cristo Rey: Cuando se llega a Támesi, una de las primeras cosas que les va a llamar la atención seguramente será el cerro Cristo Rey porque la montaña y su estatua “reinan” sobre el pueblo. El cerro es un símbolo de ese pueblo típico del suroeste antioqueño y además ofrece una hermosa vista sobre todo el Valle del Cartama, el Farallon de la Pintada y hasta el Río Cauca. La caminata dura unas 3 horas aproximadamente, no es larga pero sí exigente porque una parte del sendero es bastante inclinada y pasa por un bosque de niebla húmedo tropical, donde cuando hace buen sol este mismo camino se convierte en un fuerte ascenso. Su cumbre recompensa a quienes la conquistan por una vista panorámica de sus casi 360°..</string>
+    <string name="descripcion3">Torrentismo: La actividad  del torrentismo en Tamesis se realiza en la cascada de La Peinada, a la cual se accede a través de un recorrido por el camino prehispánico, construido siglos atrás por la cultura Cartama. El descenso de 70 m en rappel es una aventura emocionante y divertida en la que experimentaras nuevas sensaciones. </string>
+
+</resources>
