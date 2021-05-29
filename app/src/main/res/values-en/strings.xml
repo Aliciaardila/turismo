@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Turism</string>
+    <string name="paqueteTuristico"> Enter person number</string>
+    <string name="calcular">Calculate package </string>
+    <string name="descripcion1"> hiking: a journey on foot to harmonize with the land through lush
+        natural landscapes with beautiful panoramas, crystal clear streams and the very physical demand
+        of an adventurous spirit.</string>
+    <string name="descripcion2">Christ the King: When you arrive at Támesis, one of the first things that will draw
+        your attention will surely be the hill Christ the King because the mountain and its statue "reign" over the people.
+        The hill is a symbol of this typical village of the southwest of Antioquia and also offers a beautiful view over the
+        entire Cártama Valley, the Farallón de la Pintada and even the Cauca River. The walk lasts about 3 hours, it is not
+        long but it is demanding because a part of the path is quite inclined and passes through a tropical humid fog forest,
+        where when it is good sun this same road becomes a strong ascent. Its summit rewards those who conquer it by a panoramic
+        view of its almost 360°..</string>
+    <string name="descripcion3"> Torrentism: Torrentism activity in Tamesis takes place in the waterfall of La Peinada,
+        which is accessed through a route along the pre-Hispanic road, built centuries ago by the Cartama culture. The
+        descent of 70 m in rappel is an exciting and fun adventure in which you will experience new sensations.. </string>
+    <string name="actividad1">Trekking</string>
+    <string name="edad1">Age 12-70</string>
+    <string name="horario1">schedule 8-3</string>
+    <string name="actividad2">Christ the King</string>
+    <string name="edad2">Edad 12-65</string>
+    <string name="horario2">horario 8-3</string>
+    <string name="actividad3">Torrentism</string>
+    <string name="edad3">Edad 15-50</string>
+    <string name="horario3">horario 8-12</string>
+
+    <string name="opcion1">About us</string>
+    <string name="opcion2">English</string>
+    <string name="opcion3">Espanish</string>
+
+
+    <string name="perfilNombre">Alicia Ardila Aguirre</string>
+
+    <string name="perfil">My name is Alicia Ardila, I am a systems engineer at the ITM Metropolitan Institute of Technology.
+        Currently working at ElicoGroup Automation Engineering and Industrial Information Systems company, in there I Managing
+        Social Networks and the content of the website and, I also provide support in the commercial area..</string>
+
+    <string name="vermas">See+</string>
+
+</resources>

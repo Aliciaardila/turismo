@@ -10,7 +10,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.view.menu.MenuView;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
+
+
+
 public class AdaptadorLista extends  RecyclerView.Adapter<AdaptadorLista.viewHolder>{
 
     ArrayList<Turismo> listadeDatos;
@@ -60,7 +66,11 @@ public class AdaptadorLista extends  RecyclerView.Adapter<AdaptadorLista.viewHol
         nombreActividad.setText(datos.getNombreActividad());
         horarioActividad.setText(datos.getHorarioActividad());
         rangodeEdad.setText(datos.getRangodeEdad());
-        fotoActividad1.setImageResource(datos.getFotoActividad1());
+
+            Picasso.with(itemView.getContext())
+                    .load(datos.getFotoActividad1())
+                    .into(fotoActividad1);
+
 
 
         itemView.setOnClickListener(new View.OnClickListener() {

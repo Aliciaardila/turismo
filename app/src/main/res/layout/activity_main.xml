@@ -11,14 +11,14 @@
 
     <ImageView
         android:id="@+id/fotoTurismoMain"
-        android:layout_width="226dp"
-        android:layout_height="217dp"
+        android:layout_width="228dp"
+        android:layout_height="197dp"
         android:layout_marginStart="4dp"
+        android:adjustViewBounds="true"
         android:alpha="1"
         android:padding="5dp"
         android:src="@drawable/senderismo1"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -28,7 +28,8 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="20dp"
         android:padding="5dp"
-        android:text="Actividad Senderismo"
+        android:adjustViewBounds="true"
+        android:text="@string/actividad1"
         android:textColor="@color/white"
         android:textSize="12dp"
         android:textStyle="bold"
@@ -42,13 +43,12 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="20dp"
         android:padding="5dp"
-        android:text="Edad= 12-70 Años"
+        android:text="@string/edad1"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="12dp"
         app:layout_constraintStart_toEndOf="@id/fotoTurismoMain"
         app:layout_constraintTop_toBottomOf="@id/nombreActividadMain" />
-
 
     <TextView
         android:id="@+id/horarioActividadMain"
@@ -57,7 +57,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="20dp"
         android:padding="5dp"
-        android:text="Horario:8 am-3 pm"
+        android:text="@string/horario1"
         android:textColor="@color/white"
         android:textSize="12dp"
         android:textStyle="bold"
@@ -69,14 +69,15 @@
 
     <TextView
         android:id="@+id/descripcionActividadMain"
-        android:layout_width="357dp"
-        android:layout_height="195dp"
+        android:layout_width="359dp"
+        android:layout_height="141dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="true"
+        android:paddingHorizontal="10dp"
         android:text="@string/descripcion1"
         android:textAlignment="textStart"
         android:textColor="@color/white"
-        android:paddingHorizontal="10dp"
         android:textSize="12dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,42 +87,71 @@
         app:layout_constraintTop_toBottomOf="@id/horarioActividadMain" />
 
     <TextView
-        android:id="@+id/resultado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:id="@+id/cotizacion"
+        android:layout_width="255dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="28dp"
+        android:text="Cotización"
+        android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/descripcionActividadMain" />
 
     <EditText
+        android:id="@+id/nombre"
+        android:layout_width="162dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="nombre"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cotizacion" />
+
+    <EditText
         android:id="@+id/paqueteMain"
-        android:layout_width="136dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="162dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
         android:hint="@string/paqueteTuristico"
         android:textColorHint="@color/white"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@id/fotoTurismoMain"
-        app:layout_constraintTop_toBottomOf="@id/resultado" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombre" />
+
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/paqueteMain" />
 
     <Button
         android:id="@+id/botonCalcular"
         android:layout_width="128dp"
         android:layout_height="56dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="@color/gray"
         android:hint="@string/calcular"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/paqueteMain" />
+        app:layout_constraintTop_toBottomOf="@id/resultado" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
