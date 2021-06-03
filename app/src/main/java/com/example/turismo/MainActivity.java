@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
             // se obtienen los valores de cada Editext, text
 
                 String nombre=cajanombre.getText().toString();
+                String descripcion=descripcionActividad.getText().toString();
                 int numeroPersonas = Integer.parseInt(cajaNumerodePersonas.getText().toString());
 
                 //String datoResultado=cajaResultado.getText().toString();
@@ -89,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 reservacion.put("nombre",nombre);
                 reservacion.put("numeroPersonas",numeroPersonas);
                 reservacion.put("valorReserva",paquete);
+                reservacion.put("descripcion",descripcion);
 
 
                 registrarPaquete();
@@ -112,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                         cajanombre.setText("");
                         cajaNumerodePersonas.setText("");
                         cajaResultado.setText("");
-                        Toast.makeText(getApplicationContext(),"La reserva se ha registrado con exito",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"La cotización se ha registrado con exito",Toast.LENGTH_LONG).show();
 
                     }
                 })

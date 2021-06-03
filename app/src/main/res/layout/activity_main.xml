@@ -17,7 +17,6 @@
         android:adjustViewBounds="true"
         android:alpha="1"
         android:padding="5dp"
-        android:src="@drawable/senderismo1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,7 +28,6 @@
         android:layout_marginTop="20dp"
         android:padding="5dp"
         android:adjustViewBounds="true"
-        android:text="@string/actividad1"
         android:textColor="@color/white"
         android:textSize="12dp"
         android:textStyle="bold"
@@ -43,7 +41,6 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="20dp"
         android:padding="5dp"
-        android:text="@string/edad1"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="12dp"
@@ -57,7 +54,6 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="20dp"
         android:padding="5dp"
-        android:text="@string/horario1"
         android:textColor="@color/white"
         android:textSize="12dp"
         android:textStyle="bold"
@@ -82,7 +78,6 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/horarioActividadMain" />
 

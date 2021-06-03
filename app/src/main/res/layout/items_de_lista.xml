@@ -28,7 +28,7 @@
             android:layout_height="360dp"
             android:padding="5dp"
             android:alpha="1"
-            android:src="@drawable/senderismo1"
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/nombreActividad" />

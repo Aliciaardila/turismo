@@ -28,6 +28,7 @@ public class Home extends AppCompatActivity {
 
     ArrayList<Turismo> listadeDatos=new ArrayList<>();
     RecyclerView listado;
+
     FirebaseFirestore baseDatos = FirebaseFirestore.getInstance();
 // Metodos
     @Override
@@ -55,24 +56,21 @@ public class Home extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
 
                         if(task.isSuccessful()){
-
+                            int[] texto={R.string.descripcion1,R.string.descripcion2,R.string.descripcion3};
                             int contador=0;
-                            for(QueryDocumentSnapshot document: task.getResult()){
 
-                                contador=contador+1;
-                                String abuscar="descripcion"+contador;
+                            for(QueryDocumentSnapshot document: task.getResult()){
 
                                 String nombre=document.get("nombre").toString();
                                 String rango=document.get("rango").toString();
                                 String hora=document.get("hora").toString();
                                 String foto =document.get("foto").toString();
+                                listadeDatos.add(new Turismo(nombre,rango,hora,getString(texto[contador]),foto));
+                                contador++;
 
-
-                                listadeDatos.add(new Turismo(nombre,rango,hora,getString(R.string.descripcion2),foto));
-
-                                AdaptadorLista adaptador=new AdaptadorLista(listadeDatos);
-                                listado.setAdapter(adaptador);
                             }
+                            AdaptadorLista adaptador=new AdaptadorLista(listadeDatos);
+                            listado.setAdapter(adaptador);
 
                         }else{
                             Toast.makeText(Home.this, "Error consultando datos", Toast.LENGTH_SHORT).show();

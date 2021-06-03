@@ -67,6 +67,7 @@ public class AdaptadorLista extends  RecyclerView.Adapter<AdaptadorLista.viewHol
         horarioActividad.setText(datos.getHorarioActividad());
         rangodeEdad.setText(datos.getRangodeEdad());
 
+
             Picasso.with(itemView.getContext())
                     .load(datos.getFotoActividad1())
                     .into(fotoActividad1);
